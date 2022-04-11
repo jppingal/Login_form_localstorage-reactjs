@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
+*{
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #dcf2f0;
+}
+.form-container{
+  flex-direction: column;
+  position: absolute;
+  margin-top: 90px;
+  width: 250px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: #faf9f2;
+}
+.output-data{
+  flex-direction: column;
+  width: 100%;
+  text-align: justify;
+  justify-content: center;
+  font-size: smaller;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+table, td, th {
+  border: 0.5px solid gray;
+}
+
+table {
+  flex-direction: column;
+  width: 97%;
+  border-collapse: collapse;
+}
+.form-data{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+p{
+  
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5px;
+  font-size:x-small;
+  color: red;
+  border: .5px solid lightgray;
+  border-radius: 3px;
+}
+input{
+  margin: auto;
+  padding: 5px;
+}
+button{
+  width: 70%;
+  padding: 5px;
+  background: lightgreen;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+  color: white;
+  z-index: 100;
+  position: fixed;
+}
+.link{
+  text-decoration: none;
+  margin:  10px 10px;
+  font-weight: 800;
+  font-size: 20px;
+
+}
+.dashboard-container{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
