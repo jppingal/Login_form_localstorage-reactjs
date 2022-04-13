@@ -2,8 +2,8 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <div className="ContactUs">
-      <h1>Hello ContactUs Page</h1>
+    <div className="dashboard-container">
+      <h1>Welcome In ContactUs Page</h1>
     </div>
   );
 }

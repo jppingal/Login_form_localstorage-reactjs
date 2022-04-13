@@ -6,6 +6,7 @@ import Dashboard from "./Dashboard";
 import LoginPage from "./LoginPage";
 import { Route, Switch } from 'react-router-dom';
 import Header from "./Header";
+import UserDetails from "./UserDetails";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
 
      <div className="App">
      <Header/>
-      <Switch>
-        <Route path="/" component={Dashboard} exact />
+     <Switch>
+        <Route exact path="/" component={Dashboard} />
         <Route path="/login" component={LoginPage} />
+        <Route  path="/users" component={UserDetails} />
         <Route path="/contact" component={ContactUs} />
     </Switch>
 
@@ -23,6 +25,8 @@ function App() {
       <Dashboard/>
       <LoginPage/>
       <ContactUs/>
+      <UserDetails/>
+      
       </div> */}
       
     </div> 
